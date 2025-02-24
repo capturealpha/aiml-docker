@@ -7,9 +7,20 @@ This repository contains a collection of AI/ML Docker images catering to differe
 
 ### 1. Minimal AI/ML Tools
 - **Image:** `minimal-aiml`
-- **Description:** A lightweight image with essential AI/ML tools like Python, NumPy, and Pandas.
+- **Description:** A lightweight image with essential AI/ML tools for data processing and scientific computing.
 - **Base Image:** `python:3.9`
 - **Tags:** `latest`, `minimal`
+- **Includes:**
+  - **Python Essentials:** `pip`, `setuptools`
+  - **Numerical & Data Processing:** `numpy`, `pandas`
+  - **Visualization:** `matplotlib`, `seaborn`
+  - **Jupyter Support:** `jupyter`
+  - **Utilities:** `scipy`, `tqdm`
+- **Build and Push:**
+  - Navigate to the `minimal` directory and run the following command:
+    ```sh
+    ./build_and_push.sh
+    ```
 
 ### 2. Common AI/ML Tools
 - **Image:** `common-aiml`
@@ -33,13 +44,13 @@ This repository contains a collection of AI/ML Docker images catering to differe
 ### Pull an Image
 ```sh
 # Example: Pull Common AI/ML Tools Image
-docker pull ghcr.io/capturealpha/common-aiml:latest
+docker pull dockerhub.com/capturealpha/common-aiml:latest
 ```
 
 ### Run a Container
 ```sh
 # Example: Run Jupyter Notebook with Advanced AI/ML Tools
-docker run --gpus all -p 8888:8888 -v $(pwd):/workspace ghcr.io/capturealpha/advanced-aiml
+docker run --gpus all -p 8888:8888 -v $(pwd):/workspace dockerhub.com/capturealpha/advanced-aiml
 ```
 
 ## Build Your Own Image
@@ -56,4 +67,4 @@ Contributions are welcome! Feel free to submit a PR for new AI/ML Docker images 
 This repository is licensed under the MIT License. See [LICENSE](LICENSE) for details.
 
 ## Maintainers
-- **Nathan Bolam** - [GitHub](https://github.com/natebolam)
+- **Nathan Bolam** - [GitHub](https://github.com/yourusername)
