@@ -53,7 +53,7 @@ RUN pip install --no-cache-dir \
     notebook
 
 # Install data handling and NLP libraries
-RUN pip install --no-cache-dir \
+RUN BLIS_ARCH="generic" pip install --no-cache-dir \
     nltk \
     opencv-python \
     pillow \
