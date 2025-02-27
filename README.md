@@ -27,6 +27,20 @@ This repository contains a collection of AI/ML Docker images catering to differe
 - **Description:** Includes TensorFlow, PyTorch, scikit-learn, and Jupyter Notebook.
 - **Base Image:** `python:3.9`
 - **Tags:** `latest`, `common`
+- **Includes:**
+  - **Python Essentials:** `pip`, `setuptools`, `wheel`
+  - **Numerical & Data Processing:** `numpy`, `pandas`, `scipy`, `tqdm`, `joblib`
+  - **Visualization:** `matplotlib`, `seaborn`, `plotly`
+  - **Machine Learning:** `scikit-learn`, `xgboost`, `lightgbm`, `catboost`
+  - **Deep Learning Frameworks:** `tensorflow`, `torch`, `torchvision`, `torchaudio`, `keras`
+  - **Jupyter & Interactive Development:** `jupyter`, `jupyterlab`, `notebook`, `ipython`, `nbconvert`
+  - **Data Handling & Feature Engineering:** `pillow`, `opencv-python`, `nltk`, `spacy`, `transformers`
+  - **Model Persistence & Deployment:** `mlflow`, `onnx`, `onnxruntime`, `fastapi`
+- **Build and Push:**
+  - Navigate to the `common` directory and run the following command:
+    ```sh
+    ./build_and_push.sh
+    ```
 
 ### 3. Advanced AI/ML Tools
 - **Image:** `advanced-aiml`
